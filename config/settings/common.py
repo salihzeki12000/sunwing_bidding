@@ -45,8 +45,8 @@ THIRD_PARTY_APPS = (
 LOCAL_APPS = (
     'sunwing_bidding.users',  # custom users app
     # Your stuff: custom apps go here
-    'bids',
-    'senioritylists',
+    'sunwing_bidding.bids',
+    'sunwing_bidding.senioritylists',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

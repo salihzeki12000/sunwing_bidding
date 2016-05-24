@@ -2,7 +2,8 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
-from senioritylists.models import SeniorityList, Pilot, validate_status
+
+from sunwing_bidding.senioritylists.models import SeniorityList, Pilot, validate_status
 
 
 # Create your models here.

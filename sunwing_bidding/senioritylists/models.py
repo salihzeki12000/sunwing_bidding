@@ -18,16 +18,15 @@ def validate_status(value):
         raise ValidationError('enter a valid status, e.g CA, FO, SE')
 
 
-@python_2_unicode_compatible
 class Pilot(models.Model):
     """ A model describing an individual pilot who may be included in any number of seniority lists for bidding
         One-to-one relationship with website user from sunwing_bidding custom user module
     """
     ecrew_id = models.IntegerField('ecrew ID', primary_key=True)
-    username = models.OneToOneField(User)
+    user = models.OneToOneField(User)
 
     def __str__(self):
-        return self.username
+        return self.user.get_full_name()
 
 
 @python_2_unicode_compatible
